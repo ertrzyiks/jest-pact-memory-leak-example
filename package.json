@@ -1,0 +1,13 @@
+{
+  "name": "jest-pact-memory-leak-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@pact-foundation/pact": "^9.5.0",
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest --runInBand"
+  }
+}
