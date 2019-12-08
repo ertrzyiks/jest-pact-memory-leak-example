@@ -8,8 +8,9 @@ memory leak warning.
 The internal logger pipes to stdout stream as a side effect of importing the file:
 https://github.com/pact-foundation/pact-js/blob/842185388ce1449c7cd47a51f5c44b80a4cc6771/src/common/logger.ts#L6
 
-Using `jest`, files are imported separately for each test file. That means stdout stream
-is piped repeatedly depending on the number of test files.
+When using jest in band mode (--runInBand param) files are imported separately for each 
+test file in the same process. That means stdout stream is piped repeatedly depending on 
+the number of test files.
 
 ## Steps to reproduce
 ```
