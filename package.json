@@ -8,6 +8,6 @@
     "jest": "^24.9.0"
   },
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand --setupFiles ./pactSetup.js --setupTestFrameworkScriptFile=./pactTestWrapper.js"
   }
 }
